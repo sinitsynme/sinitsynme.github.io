@@ -103,8 +103,13 @@ p {
 
 .p-footer {
     font-family: "Cambria", serif;
-    margin-top: 25pt;
+    margin: 25pt 0;
     text-align: center;
+}
+
+.p-footer:hover{
+    transition: 0.3s;
+    color: #04AA6D;
 }
 
 span {
