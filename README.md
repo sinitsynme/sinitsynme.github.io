@@ -1,6 +1,9 @@
 # sinitsynme.github.io
-My CV
 
-Please, open on big screen :) 
+This little project is my CV in Russian. 
+--
+You can view it at https://sinitsynme.github.io/
 
-The site is not adapted to phones
+Please, open it on a device with a big screen :) 
+
+The site is unfortunately not adapted to phones... Maybe somewhem it will happen!
