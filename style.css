@@ -167,9 +167,8 @@ span {
     transition: 0.3s;
     text-align: center;
     height: auto;
-    vertical-align: top;
     padding: 0 3pt;
-    margin-right: 50pt;
+    margin-right: 15pt;
 }
 
 .center-img:hover{
