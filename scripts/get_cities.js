@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   regionButton.addEventListener("click", function () {
-    fetch("http://51.250.114.234:8888/rest/api/Region")
+    fetch("https://51.250.114.234:8888/rest/api/Region")
       .then((response) => response.json())
       .then((data) => {
         citySelect.innerHTML = '<option value="">Выберите город</option>';

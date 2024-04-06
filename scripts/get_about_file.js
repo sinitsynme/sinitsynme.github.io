@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var downloadButton = document.getElementById("download-button");
   downloadButton.addEventListener("click", function () {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://51.250.114.234:8888/rest/api/PriceReport");
+    xhr.open("GET", "https://51.250.114.234:8888/rest/api/PriceReport");
     xhr.responseType = "blob";
     xhr.setRequestHeader("accept", "*/*");
 

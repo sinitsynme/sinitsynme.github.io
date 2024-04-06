@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var itemContainer = document.getElementById("item-container");
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://51.250.114.234:8888/rest/api/BoardGame");
+  xhr.open("GET", "https://51.250.114.234:8888/rest/api/BoardGame");
   xhr.setRequestHeader("accept", "application/json");
   xhr.onload = function () {
     if (xhr.status === 200) {

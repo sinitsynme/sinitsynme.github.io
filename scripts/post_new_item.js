@@ -158,7 +158,7 @@ document
 
       console.log(formData);
 
-      fetch("http://51.250.114.234:8888/rest/api/BoardGame", {
+      fetch("https://51.250.114.234:8888/rest/api/BoardGame", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

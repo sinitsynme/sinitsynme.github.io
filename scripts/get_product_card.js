@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var itemId = localStorage.getItem("selectedItemId");
 
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://51.250.114.234:8888/rest/api/BoardGame/" + itemId);
+  xhr.open("GET", "https://51.250.114.234:8888/rest/api/BoardGame/" + itemId);
   xhr.setRequestHeader("accept", "application/json");
   xhr.onload = function () {
     if (xhr.status === 200) {

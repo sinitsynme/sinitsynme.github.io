@@ -1,7 +1,7 @@
 localStorage.removeItem("filterQueryString");
 function createProductCards() {
   const filterQueryString = localStorage.getItem("filterQueryString");
-  let url = "http://51.250.114.234:8888/rest/api/BoardGame/filter";
+  let url = "https://51.250.114.234:8888/rest/api/BoardGame/filter";
 
   if (filterQueryString) {
     url += "?" + filterQueryString;

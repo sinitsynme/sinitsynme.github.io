@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!info) return;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://51.250.114.234:8888/rest/api/ShopData");
+    xhr.open("GET", "https://51.250.114.234:8888/rest/api/ShopData");
     xhr.setRequestHeader("accept", "application/json");
     xhr.onload = function () {
       if (xhr.status === 200) {
