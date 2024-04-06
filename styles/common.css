@@ -1,0 +1,146 @@
+a {
+  text-decoration: none;
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.black-link {
+  color: black;
+}
+
+a:visited {
+  color: blue;
+}
+
+b {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16pt;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+  text-indent: 20px;
+}
+
+body {
+  padding: 0 20px;
+}
+
+section {
+  margin-top: 10px;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 10px 0 0;
+}
+
+table,
+tr,
+td {
+  border: 1px solid;
+  font-size: 18pt;
+}
+
+table {
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.text-styling {
+  font-size: 18pt;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-columned {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-item {
+  margin: 0 10px;
+}
+
+.search-bar {
+  width: 100%;
+  font-size: 18pt;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  object-fit: cover;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.card {
+  border: 1px black solid;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.card-name {
+  font-size: 16pt;
+  text-align: center;
+  height: 2em;
+}
+
+.card-price {
+  margin-top: 10pt;
+  font-size: 25pt;
+  font-style: oblique;
+  text-align: center;
+}
+
+.item-container {
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.item-container > a {
+  display: flex;
+}

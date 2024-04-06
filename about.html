@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>О магазине | Настолки.ru</title>
+    <link rel="stylesheet" type="text/css" href="styles/about_style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/city_select.css" />
+    <link rel="script" type="js" href="scripts/load_shops.js" />
+  </head>
+
+  <body>
+    <header class="flex-container">
+      <div class="logo-container" style="flex-grow: 1">
+        <a href="index.html">
+          <img
+            src="logos/Nastolkiru-logos_transparent.png"
+            alt="Nastolki.ru"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div style="flex-grow: 8" class="flex-container-columned">
+        <div class="flex-container">
+          <div style="flex-grow: 2">
+            <div class="flex-container centered">
+              <p>
+                Горячая линия: <a href="tel:+78005553535">8(800)555-35-35</a>
+              </p>
+              <button
+                id="region-button"
+                style="margin-left: 20px"
+                type="button"
+              >
+                Выбор региона
+              </button>
+            </div>
+
+            <div id="city-list" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <select id="city-select">
+                  <option value="">Выберите город</option>
+                </select>
+                <button id="save-city-button" type="button">Сохранить</button>
+              </div>
+            </div>
+            <form
+              class="flex-container centered"
+              style="margin-top: 10px"
+              action="catalog.html"
+            >
+              <input
+                type="text"
+                name="search-query"
+                placeholder="Введите поисковый запрос"
+                class="search-bar"
+              />
+              <button
+                class="text-styling"
+                style="margin-left: 10px"
+                type="submit"
+              >
+                Поиск
+              </button>
+            </form>
+          </div>
+
+          <div style="flex-grow: 1" class="flex-container centered">
+            <a href="login.html"><button type="button">Вход</button></a>
+            <a href="index.html" style="margin-left: 10px"
+              ><img alt="Избранное" src="buttons/favorite.svg" height="30"
+            /></a>
+            <a href="index.html" style="margin-left: 10px"
+              ><img alt="Корзина" src="buttons/cart.png" height="30"
+            /></a>
+          </div>
+        </div>
+
+        <div class="flex-container" style="align-items: center">
+          <nav style="flex-grow: 3">
+            <ul class="flex-container">
+              <li>
+                <a href="index.html">
+                  <img src="buttons/menu.png" alt="-" height="10" />
+                  Все категории
+                </a>
+              </li>
+              <li><a href="#">Настольные игры</a></li>
+              <li><a href="#">Коллекционные карточные игры</a></li>
+              <li><a href="#">Традиционные игры</a></li>
+            </ul>
+          </nav>
+          <div style="flex-grow: 2">
+            <a href="about.html">
+              <button type="button">О магазине</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex-container-columned">
+      <section class="flex-container">
+        <div class="shop-img">
+          <img
+            src="images/shop.jpeg"
+            alt="Здесь должна быть картинка нашего магазина"
+          />
+        </div>
+        <div class="flex-container-columned welcome-text">
+          <h1>О магазине Nastolki.ru</h1>
+          <p>
+            Привет! Мы называемся <b>Nastolki.ru</b> и мы занимаемся настольными
+            играми. В это понятие входит много всего интересного – наше
+            издательство издает игры, мы выбираем игры и подарки у других
+            издательств, а также иногда просто сидим и балдеем от собственной
+            крутизны. По знаку зодиака мы стрельцы, но совместимы с вами не
+            только поэтому. Раньше мы шарили только за настольные игры, мы были
+            суровыми и наше сердце было лишено слабостей (кроме настолок). Потом
+            понеслось - теперь у нас есть фигурки, мерч, прикольные жвачки и
+            конфетки из разных концов света. И все это греет нашу душу. Но мы
+            крутые не только на словах.
+          </p>
+          <b> Чем мы можем порадовать вас сегодня (и всегда): </b>
+
+          <ul>
+            <li>
+              Мы очень быстро доставляем ваши заказы, чтобы сразу можно было
+              начать играть;
+            </li>
+            <li>
+              У нас много магазинов по всей России (более 50), и заказы можно
+              забрать прямо там;
+            </li>
+            <li>
+              Мы не принимаем шелка и меха, но у нас много удобных способов
+              оплаты;
+            </li>
+            <li>
+              Много всего интересного - заглянул на пять минут, вышел через три
+              часа и с пятью мешками;
+            </li>
+            <li>У нас много скидок и всяких прикольных акций;</li>
+            <li>
+              Мы проводим игротеки - можно прийти, пощупать, прицениться и
+              просто поиграть;
+            </li>
+            <li>
+              В общем, мы клевые, вы тоже клевые. Тогда чего тянуть котов за
+              всякое - давайте дружить!
+            </li>
+          </ul>
+          <div class="text-centered">
+            <button id="download-button">Скачать наш прайс-лист</button>
+          </div>
+        </div>
+      </section>
+      <section class="flex-container-columned">
+        <b class="text-centered"> Наши магазины (кликните, чтобы увидеть подробнее) </b>
+
+        <table id="shop-table">
+          <tr>
+            <td data-info='{"id":1}'>
+              г. Солнечногорск
+            </td>
+          </tr>
+          <tr>
+            <td data-info='{"id":2}'>
+              г. Дмитров
+            </td>
+          </tr>
+          <tr>
+            <td data-info='{"id":3}'>
+              г. Красногорск
+            </td>
+          </tr>
+          <tr>
+            <td data-info='{"id":4}'>
+              г. Егорьевск            
+            </td>
+          </tr>
+        </table>
+        <div id="modal">
+          <div id="modal-content"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex-container centered">
+      <span>Синицын М.Е. 6413 - Лабораторная работа по ТСИ</span>
+    </footer>
+    <script src="./scripts/get_about_file.js"></script>
+    <script src="./scripts/get_cities.js"></script>
+    <script src="./scripts/get_about_address.js"></script>
+  </body>
+</html>

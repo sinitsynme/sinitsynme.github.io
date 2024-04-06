@@ -1,0 +1,79 @@
+@import url("common.css");
+
+.big-card {
+  width: 400px;
+  height: 400px;
+  padding: 50px 250px;
+}
+.card img {
+  max-width: 200px;
+  max-height: 200px;
+}
+.big-card-characteristics {
+  margin-left: 20px;
+  width: 500px;
+}
+
+.big-card-id {
+  text-align: end;
+}
+
+.big-card-price {
+  text-align: center;
+  font-size: 36pt;
+}
+
+.big-card-cart-button {
+  margin-top: 10px;
+  align-self: center;
+  font-size: 18pt;
+  background-color: lightcoral;
+  width: 70%;
+}
+
+.big-card-like-button {
+  margin-top: 20px;
+  align-self: center;
+  font-size: 18pt;
+  width: 70%;
+}
+
+.big-card-available {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.bordered {
+  border: 1pt solid black;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  transform-origin: 40px 0;
+  transition: transform 0.1s ease-in-out;
+}
+
+.image-container:hover .image-zoom {
+  display: block;
+  transform: scale(2);
+}
