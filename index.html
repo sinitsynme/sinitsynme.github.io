@@ -1,288 +1,421 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Настолки.ru</title>
-    <link rel="stylesheet" type="text/css" href="styles/index_style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/city_select.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CV | SinitsynME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <header class="flex-container">
-      <div class="logo-container" style="flex-grow: 1">
-        <a href="index.html">
-          <img
-            src="logos/Nastolkiru-logos_transparent.png"
-            alt="Nastolki.ru"
-            class="logo"
-          />
-        </a>
-      </div>
-      <div style="flex-grow: 8" class="flex-container-columned">
-        <div class="flex-container">
-          <div style="flex-grow: 2">
-            <div class="flex-container centered">
-              <p>
-                Горячая линия: <a href="tel:+78005553535">8(800)555-35-35</a>
-              </p>
-              <button
-                id="region-button"
-                style="margin-left: 20px"
-                type="button"
-              >
-                Выбор региона
-              </button>
+<nav style="nav-left: auto; position: sticky; top: 0;">
+    <div class="nav-menu">
+        <ul>
+            <li class="menu-link">
+                <a href="#myself">О себе</a>
+            </li>
+            <li class="menu-link">
+                <a href="#skills">Мои навыки</a>
+            </li>
+            <li class="menu-link">
+                <a href="#projects">Мои Pet-проекты</a>
+            </li>
+            <li class="menu-link">
+                <a href="#achievements">Мои достижения</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<div class="page-header-container">
+    <h1 id="myself" class="page-header">
+        Синицын Максим Евгеньевич
+    </h1>
+</div>
+
+<div style="margin-bottom: 20pt; padding: 0 15%; margin-top: 10pt">
+    <div class="card">
+        <div style="float: right;">
+            <img class="pht" src="img/my_photo.png" alt="Здесь должно быть фото!"
+                 style="height: 250pt; margin-bottom: 10pt">
+            <div class="container">
+                <h4>Java Backend Developer</h4>
             </div>
-
-            <div id="city-list" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <select id="city-select">
-                  <option value="">Выберите город</option>
-                </select>
-                <button id="save-city-button" type="button">Сохранить</button>
-              </div>
-            </div>
-            <form
-              class="flex-container centered"
-              style="margin-top: 10px"
-              action="catalog.html"
-            >
-              <input
-                type="text"
-                name="search-query"
-                placeholder="Введите поисковый запрос"
-                class="search-bar"
-              />
-              <button
-                class="text-styling"
-                style="margin-left: 10px"
-                type="submit"
-              >
-                Поиск
-              </button>
-            </form>
-          </div>
-
-          <div style="flex-grow: 1" class="flex-container centered">
-            <a href="login.html"><button type="button">Вход</button></a>
-            <a href="index.html" style="margin-left: 10px"
-              ><img alt="Избранное" src="buttons/favorite.svg" height="30"
-            /></a>
-            <a href="index.html" style="margin-left: 10px"
-              ><img alt="Корзина" src="buttons/cart.png" height="30"
-            /></a>
-          </div>
         </div>
 
-        <div class="flex-container" style="align-items: center">
-          <nav style="flex-grow: 3">
-            <ul class="flex-container">
-              <li>
-                <a href="index.html">
-                  <img src="buttons/menu.png" alt="-" height="10" />
-                  Все категории
-                </a>
-              </li>
-              <li><a href="#">Настольные игры</a></li>
-              <li><a href="#">Коллекционные карточные игры</a></li>
-              <li><a href="#">Традиционные игры</a></li>
-            </ul>
-          </nav>
-          <div style="flex-grow: 2">
-            <a href="about.html">
-              <button type="button">О магазине</button>
-            </a>
-          </div>
+        <p class="p-margin">
+            <b>Возраст:</b> <span id="lifetimeYears"></span>
+        </p>
+
+        <p class="p-margin">
+            <b>Место жительства:</b> <span>Россия, г. Самара </span>
+        </p>
+
+        <p class="p-margin"><b>Образование:</b> <span>высшее</span></p>
+
+        <p class="p-margin">
+            <b>Опыт в программировании:</b> <span id="experienceYears"></span>
+        </p>
+
+        <p class="p-margin">
+            <b>Опыт работы:</b> <span id="workYears"></span>
+        </p>
+
+        <hr>
+
+        <p class="p-margin">
+            <b>E-mail:</b>
+            <a href="mailto:sinitsynme@outlook.com" target="_blank" class="link">sinitsynme@outlook.com</a>
+        </p>
+
+        <p class="p-margin">
+            <b>Telegram:</b>
+            <a href="https://t.me/sinitsynme" target="_blank" class="link">sinitsynme</a>
+        </p>
+
+        <p class="p-margin">
+            <b>Github:</b>
+            <a href="https://github.com/sinitsynme" target="_blank" class="link">sinitsynme</a>
+        </p>
+
+        <p class="p-margin">
+            <b>LinkedIn:</b>
+            <a href="https://linkedin.com/in/sinitsynme" target="_blank" class="link">sinitsynme</a>
+        </p>
+
+        <hr>
+    </div>
+
+
+</div>
+
+<div>
+    <div class="page-header-container">
+        <h1 id="skills" class="page-header">
+            Мои навыки
+        </h1>
+    </div>
+
+    <table>
+        <tbody>
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Java"
+                     src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+            </td>
+            <td>
+                <span>Основной язык программирования. Работаю на нем в течение 4 лет </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Kotlin"
+                     src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=Kotlin&logoColor=white">
+            </td>
+            <td>
+                <span>Дополнительный язык программирования. Использую в работе </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Gradle"
+                     src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white">
+                <p></p><img class="badge" alt="Maven"
+                     src="https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white">
+            </td>
+            <td>
+                <span>Системы сборки для JVM-проектов</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Python"
+                     src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+            </td>
+            <td>
+                <p class="p-margin-left"><span>Использую для быстрого написания скриптов и решения алгоритмических задач (4 года)</span></p>
+                <p class="p-margin-left">
+                    <span>Преподавал основы программирования для школьников на Python (1 год)</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Spring"
+                     src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white">
+            </td>
+            <td>
+                <span>Использую Spring Boot и Spring Cloud в работе</span>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Apache Kafka"
+                     src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white">
+            </td>
+            <td>
+                <span>Знаю основы Apache Kafka</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Camunda BPM"
+                     src="https://shorturl.at/XkLhi">
+            </td>
+            <td>
+                <span>Уверенно работаю с Camunda BPM</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Docker"
+                     src="https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white">
+            </td>
+            <td>
+                <span>Уверенно работаю с Docker</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <p><img class="badge" alt="Postgres"
+                        src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
+                </p>
+
+                <p><img class="badge" alt="MySQL"
+                        src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=black">
+                </p>
+                <p><img class="badge" alt="MongoDB"
+                        src="https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white">
+                </p>
+
+            </td>
+            <td>
+                <span>СУБД, с которыми работал</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <p>
+                    <img class="badge" alt="HTML5"
+                         src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
+                </p>
+                <p>
+                    <img class="badge" alt="HTML5"
+                         src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+                </p>
+                <p>
+                    <img class="badge" alt="JavaScript"
+                         src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                </p>
+                <p>
+                    <img class="badge" alt="CSS"
+                         src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+                </p>
+            </td>
+            <td>
+                <span>Знаю основы фронтенда, умею разрабатывать несложные сайты</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <img class="badge" alt="Jira"
+                     src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white">
+                <p></p><img class="badge" alt="Trello"
+                     src="https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white">
+            </td>
+
+            <td>
+                <span>Умею работать в системах управления проектами.</span>
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <div class="page-header-container">
+        <h1 id="projects" class="page-header">
+            Мои Pet-проекты
+        </h1>
+    </div>
+
+    <div class="project-card" style="margin-bottom: 20pt">
+        <img class="project-pht" src="img/c4-b2b.drawio.png" alt="B2B-platform">
+
+        <h2>СкладЛайн - B2B-платформа для оптовых закупок</h2>
+
+        <p>Проект, разработанный в рамках ВКР бакалавра.</p>
+
+        <p><b>Backend стек </b><i>Java - Gradle - Spring Boot - Spring Cloud – Docker - PostgreSQL - S3</i></p>
+        <p><b>Frontend стек </b><i>Vue.js - Bootstrap - Axios - Nominatim API - Leaflet.js</i></p>
+
+        <p>Платформа предназначена для оформления и выполнения оптовых заказов на товары</p>
+        <p>Реализован MVP функционала потребителей, поставщиков и администраторов</p>
+        <p>Приложение основано на микросервисной архитектуре. Архитектура представлена на картинке</p>
+
+        <p>Планируется доработать систему с учетом принципов проектирования высоконагруженных приложений</p>
+
+        <div class="link-block">
+            <a class="link" target="_blank" href="https://github.com/sinitsynme/logist-api">Ссылка на
+                GitHub [Backend]</a> |
+            <a class="link" target="_blank" href="https://github.com/sinitsynme/logist-api-frontend">Ссылка на
+                GitHub [Frontend]</a>
         </div>
-      </div>
-    </header>
 
-    <main>
-      <section class="flex-container centered">
-        <div>
-          <a href="series.html">
-            <img
-              src="images/Carcassonne-banner.jpg"
-              alt="Здесь должен быть рекламный баннер"
-              class="banner"
-            />
-          </a>
-          <div class="timer-container">
-            <p>Черная Пятница уже близко!</p>
-            <div id="countdown">00:00:00</div>
-            <p>
-              Скидки распространяются на весь ассортимент и могут увеличиться
-              при покупке более чем одного товара!
-            </p>
-          </div>
-        </div>
-      </section>
+    </div>
 
-      <section class="flex-container">
-        <div class="flex-container-columned" style="flex-shrink: 0">
-          <b class="left-categories-bar">Популярные категории</b>
-          <a href="#" class="left-categories-bar">Вечериночные</a>
-          <a href="#" class="left-categories-bar">Карточные</a>
-          <a href="#" class="left-categories-bar">Классические</a>
-          <a href="#" class="left-categories-bar">Книги-игры</a>
-          <a href="#" class="left-categories-bar">Кооперативные</a>
-          <a href="#" class="left-categories-bar">Детективные</a>
-          <a href="#" class="left-categories-bar">Приключенческие</a>
-          <a href="#" class="left-categories-bar">Ролевые</a>
-          <a href="#" class="left-categories-bar">Стратегические</a>
+    <div class="project-card" style="margin-bottom: 20pt">
+        <img class="project-pht" src="img/analyticspro.png" alt="AnalyticsPro">
+
+        <h2>AnalyticsPro - Web-приложение для аналитики</h2>
+
+        <p>Проект, разработанный в рамках олимпиады Волга-IT’22.</p>
+
+        <p><b>Стек: </b><i>Java - Spring Boot – Thymeleaf.</i></p>
+
+        <p>Система предназначена для аналитики событий, происходящих в
+            пользовательских приложениях</p>
+
+        <p> Подключение к системе осуществляется через API, на который приложения могут
+            высылать свои типы event-ов для их отслеживания.</p>
+
+        <div class="link-block">
+            <a class="link" target="_blank" href="https://github.com/sinitsynme/AnalyticsPro">Ссылка на
+                GitHub</a>
         </div>
 
-        <div class="flex-container-columned">
-          <h1 class="text-centered">
-            Популярные товары у клиентов Nastolki.ru
-          </h1>
-          <div id="item-container" class="flex-container item-container"></div>
-          <div class="sim-slider">
-            <ul class="sim-slider-list">
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <p>Суриков Иван</p>
-                  <p>Оценка "Каркассон" - 9 из 10</p>
-                  <p>
-                    "Каркассон" - увлекательная настольная игра, которая
-                    завоевала моё сердце своей комбинацией стратегии и веселья.
-                    Эта игра приносит удовольствие от планирования и построения
-                    средневекового города с использованием плиток, на которых
-                    изображены городские элементы. Одновременно она
-                    предоставляет простую механику, что делает её доступной для
-                    игроков всех уровней. В "Каркассоне" вы соревнуетесь с
-                    друзьями за контроль над территорией, пытаясь завоевать как
-                    можно больше городских участков. Захватывающий и
-                    вдохновляющий на внимательное планирование, "Каркассон" -
-                    это отличное дополнение к любой настольной коллекции и
-                    источник незабываемых моментов веселья с близкими."
-                  </p>
-                  <p>Дата: 17 октября 2023</p>
-                </div>
-              </li>
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <p>Воробьева Наталья</p>
-                  <p>Оценка "Затерянный остров" - 8 из 10</p>
-                  <p>
-                    Купила из-за невысокой цены. Игрой довольна. Играли
-                    несколько раз вдвоем с ребенком и в компании. Больше
-                    понравилось играть вдвоем, так как больше возможности
-                    набрать нужные карты плота! Суть игры собрать плот (или
-                    несколько) и набрать максимальное количество очков за свой
-                    плот.
-                  </p>
-                  <p>Дата: 18 октября 2023</p>
-                </div>
-              </li>
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <p>Васильев Егор</p>
-                  <p>Оценка "Затерянный остров" - 7 из 10</p>
-                  <p>
-                    "Каркассон" - увлекательная настольная игра, которая
-                    завоевала моё сердце своей комбинацией стратегии и веселья.
-                    Эта игра приносит удовольствие от планирования и построения
-                    средневекового города с использованием плиток, на которых
-                    изображены городские элементы. Одновременно она
-                    предоставляет простую механику, что делает её доступной для
-                    игроков всех уровней. В "Каркассоне" вы соревнуетесь с
-                    друзьями за контроль над территорией, пытаясь завоевать как
-                    можно больше городских участков. Захватывающий и
-                    вдохновляющий на внимательное планирование, "Каркассон" -
-                    это отличное дополнение к любой настольной коллекции и
-                    источник незабываемых моментов веселья с близкими."
-                  </p>
-                  <p>Дата: 19 октября 2023</p>
-                </div>
-              </li>
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <p>Иванов Тимур</p>
-                  <p>Оценка "Затерянный остров" - 9 из 10</p>
-                  <p>
-                    "Каркассон" - увлекательная настольная игра, которая
-                    завоевала моё сердце своей комбинацией стратегии и веселья.
-                    Эта игра приносит удовольствие от планирования и построения
-                    средневекового города с использованием плиток, на которых
-                    изображены городские элементы. Одновременно она
-                    предоставляет простую механику, что делает её доступной для
-                    игроков всех уровней. В "Каркассоне" вы соревнуетесь с
-                    друзьями за контроль над территорией, пытаясь завоевать как
-                    можно больше городских участков. Захватывающий и
-                    вдохновляющий на внимательное планирование, "Каркассон" -
-                    это отличное дополнение к любой настольной коллекции и
-                    источник незабываемых моментов веселья с близкими."
-                  </p>
-                  <p>Дата: 20 октября 2023</p>
-                </div>
-              </li>
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <p>Рыбкина Ирина</p>
-                  <p>Оценка "Затерянный остров" - 8 из 10</p>
-                  <p>
-                    "Каркассон" - увлекательная настольная игра, которая
-                    завоевала моё сердце своей комбинацией стратегии и веселья.
-                    Эта игра приносит удовольствие от планирования и построения
-                    средневекового города с использованием плиток, на которых
-                    изображены городские элементы. Одновременно она
-                    предоставляет простую механику, что делает её доступной для
-                    игроков всех уровней. В "Каркассоне" вы соревнуетесь с
-                    друзьями за контроль над территорией, пытаясь завоевать как
-                    можно больше городских участков. Захватывающий и
-                    вдохновляющий на внимательное планирование, "Каркассон" -
-                    это отличное дополнение к любой настольной коллекции и
-                    источник незабываемых моментов веселья с близкими."
-                  </p>
-                  <p>Дата: 21 октября 2023</p>
-                </div>
-              </li>
-              <li class="sim-slider-element">
-                <div class="slide">
-                  <h2>Лещенко Ангелина</h2>
-                  <p>Оценка "Затерянный остров" - 9 из 10</p>
-                  <p>
-                    "Каркассон" - увлекательная настольная игра, которая
-                    завоевала моё сердце своей комбинацией стратегии и веселья.
-                    Эта игра приносит удовольствие от планирования и построения
-                    средневекового города с использованием плиток, на которых
-                    изображены городские элементы. Одновременно она
-                    предоставляет простую механику, что делает её доступной для
-                    игроков всех уровней. В "Каркассоне" вы соревнуетесь с
-                    друзьями за контроль над территорией, пытаясь завоевать как
-                    можно больше городских участков. Захватывающий и
-                    вдохновляющий на внимательное планирование, "Каркассон" -
-                    это отличное дополнение к любой настольной коллекции и
-                    источник незабываемых моментов веселья с близкими."
-                  </p>
-                  <p>Дата: 22 октября 2023</p>
-                </div>
-              </li>
-            </ul>
-            <div class="sim-slider-arrow-left"></div>
-            <div class="sim-slider-arrow-right"></div>
-            <div class="sim-slider-dots"></div>
-          </div>
+    </div>
+
+    <div class="project-card" style="margin-bottom: 20pt">
+        <img class="project-pht" src="img/autocomp.png" alt="Autocompleting Library">
+
+        <h2>AutocompletingLibrary - Движок автодополнения</h2>
+
+        <p>Поисковая библиотека, основанная на префиксном дереве (боре).</p>
+
+        <p><b>Стек: </b><i>Java - Maven</i></p>
+
+
+        <p>Консольное приложение, созданное для этой библиотеки, обрабатывает поиковую базу в виде CSV-файла
+            и может искать текст по фиксированному столбцу.
+        </p>
+
+        <p> В приложение встроен тестовый файл airports.csv, который позволяет осуществлять поиск аэропортов по
+            названию,
+            городу, коду аэропорта, его координатам.</p>
+
+        <div class="link-block">
+            <a class="link" target="_blank" href="https://github.com/sinitsynme/AutocompletingLibrary">Ссылка на
+                GitHub</a>
         </div>
-      </section>
-    </main>
 
-    <div class="btn-up btn-up_hide"></div>
-    <div class="follow-cursor"></div>
+    </div>
 
-    <footer class="flex-container-columned centered">
-      <p>Синицын М.Е. 6413 - Лабораторная работа по ТСИ</p>
-      <form action="new_item.html">
-        <button type="submit">Добавить новый товар</button>
-      </form>
-    </footer>
-    <script src="./scripts/get_index_allCards.js"></script>
-    <script src="./scripts/get_cities.js"></script>
-    <script src="./scripts/index_go_up.js"></script>
-    <script src="./scripts/index_slider.js"></script>
-    <script await src="./scripts/index_timer.js"></script>
-    <script src="./scripts/index_cursor.js"></script>
-  </body>
+</div>
+
+<div>
+    <div class="page-header-container">
+        <h1 id="achievements" class="page-header">
+            Мои достижения
+        </h1>
+    </div>
+
+    <h3>2019</h3>
+
+    <ul>
+        <li class="li-margin">
+            <p>Сдал международный экзамен First Certificate In English, подтвердив уровень B2 (Upper Intermediate)</p>
+        </li>
+    </ul>
+
+    <h3>2021</h3>
+
+    <ul>
+
+        <li class="li-margin">
+            <p>Прошёл стажировку в компании SimbirSoft с приглашением в компанию на должность "Java Junior
+                Developer"</p>
+        </li>
+
+        <li class="li-margin">
+            <p>Прошел дополнительное образование в АНО ВО "Университет Сириус" по программе "Формальная верификация и
+                дизайн программного обеспечения"</p>
+        </li>
+    </ul>
+
+    <h3>2022</h3>
+
+    <ul>
+        <li class="li-margin">
+            <p>Занял 2 место на Международной олимпиаде Волга-IT'22 по направлению "Прикладное программирование на
+                Java/C#</p>
+        </li>
+    </ul>
+
+    <h3>2023</h3>
+
+    <ul>
+        <li class="li-margin">
+            <p>Завершил курс "Алгоритмы и структуры данных" в Тинькофф</p>
+        </li>
+        <li class="li-margin">
+            <p>Получил оффер в Тинькофф на должность Java Software Developer</p>
+        </li>
+    </ul>
+
+    <div style="padding: 0 5%">
+        <div class="project-card" style="margin-bottom: 20pt; text-align: center ;">
+            <a href="img/fce.png" target="_blank"><img class="center-img" style="width: 20%;" src="img/fce.png"
+                                                       alt="FCE Certificate"></a>
+            <a href="img/sirius.png" target="_blank"><img class="center-img" style="width: 20%;" src="img/sirius.png"
+                                                          alt="Sirius Certificate"></a>
+            <a href="img/volgait.png" target="_blank"><img class="center-img" style="width: 20%;" src="img/volgait.png"
+                                                           alt="Volga-IT'22"></a>
+        </div>
+    </div>
+</div>
+
+
+<p class="p-footer">
+    <b id="foot"></b>
+</p>
+
+
+</body>
 </html>
+
+<script>
+    function decideYearsNaming(years) {
+        if (years % 10 === 0) return "лет"
+        if (years % 10 === 1) return "год"
+        if (years % 10 < 5) return "года"
+        return "лет"
+    }
+
+    let currentYear = new Date().getFullYear()
+    let yearWhenWorkStarted = 2023
+    let yearWhenProgrammingStarted = 2020
+    let bornYear = 2002
+
+    let workYears = currentYear - yearWhenWorkStarted
+    let experienceYears = currentYear - yearWhenProgrammingStarted
+    let age = currentYear - bornYear
+
+    document.querySelector('#foot').textContent = "© " + currentYear + " Maxim Sinitsyn"
+    document.querySelector('#lifetimeYears').textContent = `${age} ${decideYearsNaming(age)}`
+    document.querySelector('#experienceYears').textContent = `${experienceYears} ${decideYearsNaming(experienceYears)}`
+    document.querySelector('#workYears').textContent = `${workYears} ${decideYearsNaming(workYears)}`
+
+</script>
+
+
+
