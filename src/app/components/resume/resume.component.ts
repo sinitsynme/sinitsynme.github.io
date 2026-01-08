@@ -71,7 +71,7 @@ export class ResumeComponent {
       role: 'IT Project Manager course',
       achievements: [
         'Developed manager`s sight of view',
-        'TBC'
+        'TBC...'
       ]
     }
   ];
