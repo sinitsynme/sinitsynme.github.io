@@ -1,0 +1,138 @@
+<section class="resume" id="resume">
+
+  <!-- PERSONAL INFO -->
+  <div class="personal-layout">
+    <div class="accent-line"></div>
+
+    <div class="personal-content">
+
+      <!-- LEFT COLUMN -->
+      <div class="personal-column personal-left">
+        <div class="personal-item">
+          <span class="label">Name</span>
+          <span class="value">{{ personal.name }}</span>
+        </div>
+
+        <div class="personal-item">
+          <span class="label">Location</span>
+          <span class="value">{{ personal.location }}</span>
+          <span class="value secondary">
+            <p>
+              <i>Ready to relocate or work remotely</i>
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="personal-column personal-right">
+
+        <!-- CONTACT BLOCK -->
+        <div class="contact-block">
+          <h4 class="contact-header vertical">Contact Me</h4>
+
+          <div class="contact-links">
+            <div class="personal-item">
+              <span class="label">LinkedIn</span>
+              <a class="value link" href="https://www.linkedin.com/in/{{ personal.linkedIn }}" target="_blank"
+                rel="noopener noreferrer">
+                {{ personal.linkedIn }}
+              </a>
+            </div>
+            <div class="personal-item">
+              <span class="label">Email</span>
+              <a class="value link" href="mailto:{{ personal.email }}">
+                {{ personal.email }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <h3>Work Experience</h3>
+
+    <div class="timeline-item" *ngFor="let job of experience">
+      <div class="timeline-header">
+        <div class="years">
+          <span class="from">{{ job.from }}</span>
+          <span class="to">{{ job.to }}</span>
+        </div>
+
+        <img [src]="job.logo" class="logo" alt="logo">
+
+        <span class="company">{{ job.name }}</span>
+      </div>
+
+      <div class="role">{{ job.role }}</div>
+
+      <ul class="achievements">
+        <li *ngFor="let a of job.achievements">{{ a }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <h3>Education</h3>
+
+    <div class="timeline-item" *ngFor="let edu of education">
+      <div class="timeline-header">
+        <div class="years">
+          <span class="from">{{ edu.from }}</span>
+          <span class="to">{{ edu.to }}</span>
+        </div>
+
+        <img [src]="edu.logo" class="logo" alt="logo">
+
+        <span class="company">{{ edu.name }}</span>
+      </div>
+
+      <div class="role">{{ edu.role }}</div>
+
+      <ul class="achievements">
+        <li *ngFor="let a of edu.achievements">{{ a }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LANGUAGE PROFICIENCY -->
+  <div class="section">
+    <h3>Language Proficiency</h3>
+    <a> Click for certificate</a>
+
+    <div class="language-list">
+      <a *ngFor="let lang of languages" class="language-item" [href]="lang.certificate" target="_blank"
+        rel="noopener noreferrer">
+        <img [src]="lang.badge" [alt]="lang.name + ' ' + lang.level" loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+
+  <!-- SKILLS -->
+  <div class="section">
+    <h3>Skills</h3>
+
+    <div class="skills-list">
+      <div class="skill-group" *ngFor="let group of skills">
+        <div class="skill-group-label">
+          {{ group.title }}
+        </div>
+
+        <div class="skills-row">
+          <div class="skill-item" *ngFor="let skill of group.items" [class.featured]="skill.featured">
+            <img [src]="skill.badge" [alt]="skill.name" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
