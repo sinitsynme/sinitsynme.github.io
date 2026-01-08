@@ -5,6 +5,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-header.vertical {
+    writing-mode: horizontal-tb;
+    transform: none;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .contact-block {
+    grid-template-columns: 1fr;
+  }
+}
+
 .resume {
   background: #0b0b0b;
   color: #e0e0e0;
@@ -56,9 +69,9 @@ h3 {
 }
 
 .personal-content {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 
 .personal-item .label {
@@ -240,11 +253,6 @@ h3 {
 
 .contact-header.vertical {
   opacity: 0.85;
-}
-
-.personal-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .contact-block {
@@ -434,6 +442,29 @@ h3 {
   max-width: 800px;
 }
 
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
 .project-card img {
   width: 100%;
   border-radius: 8px;
@@ -541,4 +572,21 @@ h3 {
   border-radius: 6px;
   color: #eee;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    font-size: 2.5rem;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+
+  .nav {
+    order: 2;
+  }
 }
