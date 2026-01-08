@@ -52,6 +52,14 @@
     </div>
   </div>
 
+  <!-- DOWNLOAD CV BUTTON -->
+  <div class="cv-download">
+    <button class="cv-button" (click)="downloadCv()">
+      <span class="cv-icon">⬇</span>
+      <span class="cv-text">Download CV (PDF, A4)</span>
+    </button>
+  </div>
+
   <!-- WORK EXPERIENCE -->
   <div class="section">
     <h3>Work Experience</h3>
@@ -100,6 +108,41 @@
     </div>
   </div>
 
+  <section class="featured-projects">
+    <h2 class="section-title">Featured pet projects</h2>
+
+    <div class="carousel">
+      <button class="nav prev" (click)="prevProject()">‹</button>
+
+      <div class="project-card">
+        <div class="project-image" (click)="openZoom(featuredProjects[currentProjectIndex].image)">
+          <img [src]="featuredProjects[currentProjectIndex].image" [alt]="featuredProjects[currentProjectIndex].name" />
+          <span class="zoom-hint">Click to zoom</span>
+        </div>
+
+        <div class="project-content">
+          <h3>{{ featuredProjects[currentProjectIndex].name }}</h3>
+          <p>{{ featuredProjects[currentProjectIndex].description }}</p>
+
+          <div class="project-stack">
+            <span class="stack-label">Stack:</span>
+
+            <span class="stack-item" *ngFor="let tech of featuredProjects[currentProjectIndex].stack">
+              {{ tech }}
+            </span>
+          </div>
+
+          <a class="github-link" [href]="featuredProjects[currentProjectIndex].github" target="_blank" rel="noopener">
+            <img src="/assets/github-violet.png" alt="GitHub" />
+            Find more info on GitHub
+          </a>
+        </div>
+      </div>
+
+      <button class="nav next" (click)="nextProject()">›</button>
+    </div>
+  </section>
+
   <!-- LANGUAGE PROFICIENCY -->
   <div class="section">
     <h3>Language Proficiency</h3>
@@ -132,7 +175,10 @@
       </div>
     </div>
   </div>
-
-
-
 </section>
+
+<div class="zoom-overlay" *ngIf="isZoomOpen" (click)="closeZoom()">
+  <img class="fullscreen-image" [src]="zoomImageSrc" alt="Project image" (click)="$event.stopPropagation()" />
+
+  <button class="close-btn" (click)="closeZoom()">×</button>
+</div>
