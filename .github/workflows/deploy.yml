@@ -1,9 +1,8 @@
-name: Deploy Angular User Site
+name: Deploy Angular to Root GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -20,11 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
@@ -32,25 +29,22 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build Angular
+      - name: Build Angular (ROOT)
         run: |
           npm run build -- \
             --configuration production \
             --base-href /
 
-      - name: Move build to root
+      - name: Prepare static output
         run: |
-          APP_DIR=$(ls dist)
-          mv dist/$APP_DIR/* dist/
-          rm -rf dist/$APP_DIR
-
-      - name: SPA fallback
-        run: cp dist/index.html dist/404.html
+          mkdir -p dist/out
+          cp -r dist/*/browser/* dist/out
+          cp dist/out/index.html dist/out/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist/out
 
   deploy:
     needs: build
@@ -59,5 +53,4 @@ jobs:
       name: github-pages
 
     steps:
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v4
