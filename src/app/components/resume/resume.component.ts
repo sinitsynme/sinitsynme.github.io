@@ -25,16 +25,16 @@ export class ResumeComponent {
       name: 'T-Bank (ex. Tinkoff)',
       role: 'Software Development Engineer (Backend, `T-Bank for Business`)',
       achievements: [
-        'Worked on 3 projects (with Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra)',
-        'Developed features communicating with product managers and other teams',
-        'Led development of a finance service from requirements to MVP, used technologies are REST API, Spring Kafka, Spring Data JDBC with Postgres, outboxing. Service processes 50k ops/minute',
-        'Reduced PostgreSQL CPU utilization during vacuums on massive update operations from 100% to 40-50%',
-        'Optimized DB IO utilization due to batch job inefficient query from 100% to 50-60%',
-        'Implemented black-box testing infrastructure and scenarios for 2 projects with Docker and Cucumber',
-        'Integrated company reliability processes in our team to support products` SLA and inform stakeholders during crash',
+        'Contributed to multiple backend services of 3 projects using Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra',
+        'Developed features Agile communicating with product managers and other teams',
+        'Led development of a finance service from requirements gathering to MVP delivery, the service processes 50_000 ops/minute',
+        'Reduced PostgreSQL CPU utilization during vacuums on large updates from 100% to 40-50%',
+        'Optimized DB I/O usage due to batch job inefficient query, reducing utilization by 40%',
+        'Implemented black-box testing infrastructure for 2 projects with Docker and Cucumber to decrease regress time',
+        'Integrated company reliability processes in our team to support products` SLA and to have communication to stakeholders during crashes',
         'Developed dashboards in Grafana for team products` observability',
-        'Mentored an intern and a new teammate engineer',
-        'Participated in 5 students` educational program as assistant (assignment code reviews and mentoring)'
+        'Mentored an intern and a newly hired backend engineer to deep them into team`s processes',
+        'Participated as mentor and code-reviewer in 5 students` junior educational program (assignment code reviews and mentoring)'
       ]
     },
     {
@@ -44,8 +44,8 @@ export class ResumeComponent {
       name: 'SimbirSoft',
       role: 'Backend Intern Engineer',
       achievements: [
-        'With teammates developed MVP of kanban board (Java, Spring Boot, PostgreSQL)',
-        'Helped teammates to solve local problems',
+        'Contributed to the development of MVP of Kanban board for task managing (Java, Spring Boot, PostgreSQL)',
+        'Assisted teammates to solve local technical issues within our tasks',
       ]
     }
   ];
@@ -58,9 +58,10 @@ export class ResumeComponent {
       name: 'Samara University',
       role: 'BSc Computer Science (Fundamental Informatics and Information Technologies)',
       achievements: [
+        'Led a fullstack student team project - Turing Machine calculator',
+        'Did a research on microservice vs monolith app architecture for data-intensive apps',
         'Graduated with honors',
-        'Led fullstack student team project',
-        'Mentored fellows in backend development and maths',
+        'Mentored fellows in backend development and advanced mathematics',
       ]
     },
     {
@@ -70,15 +71,15 @@ export class ResumeComponent {
       name: 'Samara University',
       role: 'IT Project Manager course',
       achievements: [
-        'Developed manager`s sight of view',
-        'TBC...'
+        'Launched an SPA for a real organization with frontend developers team',
+        'Studied risks and costs management of IT projects',
       ]
     }
   ];
 
   skills = [
     {
-      title: 'Languages',
+      title: 'Programming languages',
       items: [
         {
           name: 'Java',
@@ -98,7 +99,7 @@ export class ResumeComponent {
     },
   
     {
-      title: 'Java / Kotlin Essentials',
+      title: 'Java / Kotlin essentials',
       items: [
         {
           name: 'Maven',
