@@ -147,7 +147,7 @@
   }
   
   .achievements li::before {
-    content: "▸ ";
+    content: "￭ ";
     color: #00ff99;
   }
   

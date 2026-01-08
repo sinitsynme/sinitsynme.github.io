@@ -27,13 +27,14 @@ export class ResumeComponent {
       achievements: [
         'Worked on 3 projects (with Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra)',
         'Developed features communicating with product managers and other teams',
-        'Led developing of a finance service from requirements to MVP',
+        'Led development of a finance service from requirements to MVP, used technologies are REST API, Spring Kafka, Spring Data JDBC with Postgres, outboxing. Service processes 50k ops/minute',
         'Reduced PostgreSQL CPU utilization during vacuums on massive update operations from 100% to 40-50%',
         'Optimized DB IO utilization due to batch job inefficient query from 100% to 50-60%',
-        'Integrated reliability and support processes in our team to maintain SLA',
-        'Developed dashboards in Grafana for team products observability',
+        'Implemented black-box testing infrastructure and scenarios for 2 projects with Docker and Cucumber',
+        'Integrated company reliability processes in our team to support products` SLA and inform stakeholders during crash',
+        'Developed dashboards in Grafana for team products` observability',
         'Mentored an intern and a new teammate engineer',
-        'Participated in 5 students` educational program as assistant (hometask reviews and mentoring)'
+        'Participated in 5 students` educational program as assistant (assignment code reviews and mentoring)'
       ]
     },
     {
@@ -45,7 +46,6 @@ export class ResumeComponent {
       achievements: [
         'With teammates developed MVP of kanban board (Java, Spring Boot, PostgreSQL)',
         'Helped teammates to solve local problems',
-        'Wrote significant amount of code in project`s codebase'
       ]
     }
   ];
@@ -70,7 +70,8 @@ export class ResumeComponent {
       name: 'Samara University',
       role: 'IT Project Manager course',
       achievements: [
-        'Developed managers sight of view'
+        'Developed manager`s sight of view',
+        'TBC'
       ]
     }
   ];
