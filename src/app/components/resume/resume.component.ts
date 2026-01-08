@@ -1,14 +1,24 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
+
+  readonly cvPdfUrl = '/assets/pdf/Maksim_Sinitsyn_CV_A4.pdf';
+
+  downloadCv(): void {
+    const link = document.createElement('a');
+    link.href = this.cvPdfUrl;
+    link.download = 'Maksim_Sinitsyn_CV.pdf';
+    link.target = '_blank';
+    link.click();
+  }
 
   personal = {
     name: 'Maksim Sinitsyn',
@@ -97,7 +107,7 @@ export class ResumeComponent {
         }
       ]
     },
-  
+
     {
       title: 'Java / Kotlin essentials',
       items: [
@@ -124,7 +134,7 @@ export class ResumeComponent {
         }
       ]
     },
-  
+
     {
       title: 'Testing Essentials',
       items: [
@@ -142,7 +152,7 @@ export class ResumeComponent {
         }
       ]
     },
-  
+
     {
       title: 'Tools',
       items: [
@@ -157,7 +167,7 @@ export class ResumeComponent {
         }
       ]
     },
-  
+
     {
       title: 'Databases',
       items: [
@@ -179,10 +189,10 @@ export class ResumeComponent {
           name: 'Redis',
           badge: 'https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white'
         }
-        
+
       ]
     },
-  
+
     {
       title: 'Streaming & Processing',
       items: [
@@ -197,7 +207,7 @@ export class ResumeComponent {
         }
       ]
     },
-  
+
     {
       title: 'BPMN',
       items: [
@@ -222,6 +232,68 @@ export class ResumeComponent {
       badge: 'https://img.shields.io/badge/Russian-C2-0A66C2?style=for-the-badge&logoColor=white',
     }
   ];
+
+  featuredProjects = [
+    {
+      name: 'Flink Sensors',
+      description: 'Demonstration of Apache Flink streaming features. Project for calculating averages of machine metrics and alerting on critical values',
+      stack: [
+        'Java 17',
+        'Apache Flink',
+        'Kafka',
+        'Prometheus',
+        'Grafana',
+        'Docker'
+      ],
+      image: '/assets/projects/flink-sensors.png',
+      github: 'https://github.com/sinitsynme/flink-sensors'
+    },
+    {
+      name: 'Logist API',
+      description: 'FullStack project for B2B marketplace. Includes 4 backend microservices, gateway and load-balancing and web-application',
+      stack: [
+        'Java',
+        'Spring Boot',
+        'Spring Cloud',
+        'Spring Security',
+        'PostgreSQL',
+        'Vue.js',
+        'S3',
+        'Docker'
+      ],
+      image: '/assets/projects/c4-b2b.drawio.png',
+      github: 'https://github.com/sinitsynme/logist-api'
+    }
+  ];
   
-  
+
+  currentProjectIndex = 0;
+
+  nextProject() {
+    this.currentProjectIndex =
+      (this.currentProjectIndex + 1) % this.featuredProjects.length;
+  }
+
+  prevProject() {
+    this.currentProjectIndex =
+      (this.currentProjectIndex - 1 + this.featuredProjects.length) %
+      this.featuredProjects.length;
+  }
+
+
+  isZoomOpen = false;
+  zoomImageSrc = '';
+
+  openZoom(image: string) {
+    this.zoomImageSrc = image;
+    this.isZoomOpen = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeZoom() {
+    this.isZoomOpen = false;
+    document.body.style.overflow = '';
+  }
+
+
 }
