@@ -112,8 +112,6 @@
     <h2 class="section-title">Featured pet projects</h2>
 
     <div class="carousel">
-      <button class="nav prev" (click)="prevProject()">‹</button>
-
       <div class="project-card">
         <div class="project-image" (click)="openZoom(featuredProjects[currentProjectIndex].image)">
           <img [src]="featuredProjects[currentProjectIndex].image" [alt]="featuredProjects[currentProjectIndex].name" />
@@ -139,7 +137,10 @@
         </div>
       </div>
 
-      <button class="nav next" (click)="nextProject()">›</button>
+      <div class="carousel-nav">
+        <button class="nav prev" (click)="prevProject()">‹</button>
+        <button class="nav next" (click)="nextProject()">›</button>
+      </div>
     </div>
   </section>
 
