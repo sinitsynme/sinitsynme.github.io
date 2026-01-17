@@ -10,7 +10,7 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class ResumeComponent {
 
-  readonly cvPdfUrl = '/assets/pdf/Maksim_Sinitsyn_CV_A4.pdf';
+  readonly cvPdfUrl = '/assets/pdf/MaksimSinitsynCV.pdf';
 
   downloadCv(): void {
     const link = document.createElement('a');
