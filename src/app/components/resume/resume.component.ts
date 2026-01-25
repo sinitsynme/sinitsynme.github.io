@@ -48,8 +48,8 @@ export class ResumeComponent {
       ]
     },
     {
-      from: '02/2022',
-      to: '06/2022',
+      from: '02/2021',
+      to: '06/2021',
       logo: '/assets/simbirsoft.png',
       name: 'SimbirSoft',
       role: 'Backend Intern Engineer',
