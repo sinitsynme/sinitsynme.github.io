@@ -35,13 +35,13 @@ export class ResumeComponent {
       name: 'T-Bank (ex. Tinkoff)',
       role: 'Software Development Engineer (Backend, `T-Bank for Business`)',
       achievements: [
-        'Contributed to multiple backend services of 3 projects using Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra',
-        'Developed features Agile communicating with product managers and other teams',
+        'Developed and maintained backend services across 3 projects using Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra',
+        'Delivered backend features in Agile collaboration with product managers and other teams',
         'Led development of a finance service from requirements gathering to MVP delivery, the service processes 50_000 ops/minute',
         'Reduced PostgreSQL CPU utilization during vacuums on large updates from 100% to 40-50%',
         'Optimized DB I/O usage due to batch job inefficient query, reducing utilization by 40%',
-        'Implemented black-box testing infrastructure for 2 projects with Docker and Cucumber to decrease regress time',
-        'Integrated company reliability processes in our team to support products` SLA and to have communication to stakeholders during crashes',
+        'Implemented black-box testing infrastructure for 2 projects with Docker and Cucumber to decrease regression testing time',
+        'Integrated company reliability and incident-response practices in our team to support products` SLA and to improve stakeholder communication',
         'Developed dashboards in Grafana for team products` observability',
         'Mentored an intern and a newly hired backend engineer to deep them into team`s processes',
         'Participated as mentor and code-reviewer in 5 students` junior educational program (assignment code reviews and mentoring)'
