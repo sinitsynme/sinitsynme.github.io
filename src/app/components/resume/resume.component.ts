@@ -24,7 +24,7 @@ export class ResumeComponent {
     name: 'Maksim Sinitsyn',
     email: 'mesinitsyn@yandex.ru',
     linkedIn: 'sinitsynme',
-    location: 'Samara, Russia'
+    location: 'Ready to relocate to EU or work remotely from Russia'
   };
 
   experience = [
