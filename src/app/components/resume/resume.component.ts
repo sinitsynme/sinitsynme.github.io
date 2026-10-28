@@ -24,7 +24,7 @@ export class ResumeComponent {
     name: 'Maksim Sinitsyn',
     email: 'mesinitsyn@yandex.ru',
     linkedIn: 'sinitsynme',
-    location: 'Ready to relocate to EU or work remotely from Russia'
+    location: 'Ready to relocate to EU or work remotely from Kazakhstan'
   };
 
   experience = [
@@ -33,7 +33,7 @@ export class ResumeComponent {
       to: 'present',
       logo: '/assets/t-bank.jpg',
       name: 'T-Bank (ex. Tinkoff)',
-      role: 'Software Development Engineer (Backend, `T-Bank for Business`)',
+      role: 'Senior Software Development Engineer (Backend, `T-Bank for Business`)',
       achievements: [
         'Developed and maintained backend services across 3 projects using Java/Kotlin, Spring Boot, Kafka, PostgreSQL, Cassandra',
         'Delivered backend features in Agile collaboration with product managers and other teams',
@@ -265,7 +265,7 @@ export class ResumeComponent {
       github: 'https://github.com/sinitsynme/logist-api'
     }
   ];
-  
+
 
   currentProjectIndex = 0;
 
